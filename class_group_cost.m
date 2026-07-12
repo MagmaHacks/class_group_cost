@@ -191,7 +191,7 @@ intrinsic ClassGroupSuggestedBound
   require IsAbsoluteOrder(O) : 
      "ClassGroup not implemented for relative extensions";
 
-  Bmin := Bmin div 1; // MagmaHacks; can be div 2, can be div 3 * 2, etc.
+  Bmin := Bmin * 1 div 1; // MagmaHacks; can be * 1 div 2, can be * 2 div 3, etc.
   Bmin := Max(Bmin, 50);
 
   d := Degree(O);
